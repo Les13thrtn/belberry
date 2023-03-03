@@ -358,7 +358,7 @@ input[type='number'] {
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .header__adress_metro_icon {
@@ -440,7 +440,7 @@ input[type='number'] {
 
 .header__icons_item {
   height: 1.7rem;
-  width: auto;
+  width: 1.7rem;
 }
 
 .header__icons_item:not(:last-child) {
@@ -555,6 +555,7 @@ input[type='number'] {
   }
   .header__icons_item {
     height: 3.8rem;
+    width: 3.8rem;
     z-index: 25;
   }
   .header__icons_item:not(:first-child) {
@@ -774,7 +775,7 @@ input[type='number'] {
   .hero__info_btn {
     height: 10rem;
     margin-top: 0rem;
-    padding: 0 11.4rem;
+    padding: 0 11rem;
   }
   .hero__photo {
     margin-left: 2rem;

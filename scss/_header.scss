@@ -53,7 +53,7 @@
       margin-bottom: 0.3rem;
       display: flex;
       align-items: center;
-      justify-content: end;
+      justify-content: flex-end;
       &_icon {
         margin-right: 1.1rem;
         width: 1.2rem;
@@ -118,7 +118,7 @@
 
     &_item {
       height: 1.7rem;
-      width: auto;
+      width: 1.7rem;
 
       &:not(:last-child) {
         margin-right: 2rem;
@@ -252,6 +252,7 @@
     &__icons {
       &_item {
         height: 3.8rem;
+        width: 3.8rem;
         z-index: 25;
 
         &:not(:first-child) {
