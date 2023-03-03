@@ -989,6 +989,30 @@ input[type='number'] {
   width: 1.3rem;
 }
 
+.sublist_with-arrow > a {
+  position: relative;
+  padding-right: 1.1rem;
+}
+
+.sublist_with-arrow > a::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 0.7rem;
+  height: 0.5rem;
+  background: url("../img/arrow-drop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sublist_with-arrow.active > a::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .sublist.active > a,
 .header__nav_list > li:hover > a {
   color: #6fc67b;
@@ -1145,6 +1169,9 @@ input[type='number'] {
     border-radius: 0rem 10rem 10rem 0rem;
   }
   .sublist__burger {
+    display: none;
+  }
+  .sublist_with-arrow > a::before {
     display: none;
   }
   .sublist.active > a,

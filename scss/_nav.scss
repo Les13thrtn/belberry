@@ -203,6 +203,33 @@
   }
 }
 
+.sublist_with-arrow {
+  > a {
+    position: relative;
+    padding-right: 1.1rem;
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 40%;
+      width: 0.7rem;
+      height: 0.5rem;
+      background: url('../img/arrow-drop.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.4s;
+    }
+  }
+}
+
+.sublist_with-arrow.active {
+  > a {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .sublist.active,
 .header__nav_list > li:hover {
   > a {
@@ -401,6 +428,14 @@
   .sublist {
     &__burger {
       display: none;
+    }
+  }
+
+  .sublist_with-arrow {
+    > a {
+      &::before {
+        display: none;
+      }
     }
   }
 
