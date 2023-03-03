@@ -1,0 +1,217 @@
+.hero {
+  position: relative;
+  padding-top: 1.5rem;
+  background-color: #e5e5e5;
+  overflow: hidden;
+
+  &__decor {
+    position: absolute;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-white {
+      top: 0;
+      left: 0;
+      width: 87rem;
+      height: 90rem;
+    }
+
+    &-green {
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 60rem;
+    }
+  }
+
+  &__content {
+    overflow: visible;
+  }
+
+  &__slide {
+    display: flex;
+  }
+
+  &__text {
+    width: 69rem;
+    padding-top: 5rem;
+    margin-right: 16.8rem;
+  }
+
+  &__title {
+    margin-bottom: 4.1rem;
+
+    span {
+      color: $green-color;
+    }
+  }
+
+  &__info {
+    padding: 5rem 7.5rem 5rem 6.5rem;
+    background: #ffffff;
+    box-shadow: 0rem 1rem 2.5rem rgba(28, 106, 39, 0.03);
+    border-radius: 1.2rem;
+
+    &_text {
+      margin-bottom: 2.3rem;
+      font-family: 'Jost';
+      font-weight: 300;
+      font-size: 2.8rem;
+      line-height: 120%;
+      text-transform: uppercase;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: $black-color;
+    }
+
+    &_bottom {
+      display: flex;
+    }
+
+    &_price {
+      width: 55%;
+      margin-right: 1.5rem;
+      &_name {
+        margin-bottom: 0.4rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $lightGray-color;
+      }
+
+      &_sum {
+        font-family: 'Jost';
+        font-weight: 500;
+        font-size: 3.5rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $green-color;
+      }
+    }
+
+    &_btn {
+      margin-top: 2rem;
+      height: 5rem;
+      padding: 0 4.5rem;
+      color: #ffffff;
+      background-color: $green-color;
+    }
+  }
+
+  &__photo {
+    width: 44rem;
+    height: 50rem;
+    user-select: none;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__navigation {
+    position: absolute;
+    left: -8%;
+    top: 42%;
+    width: 115%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 48em) {
+  .hero {
+    position: relative;
+    padding-top: 29.6rem;
+
+    &__decor {
+      position: absolute;
+      overflow: hidden;
+
+      &-white {
+        top: -91rem;
+        left: -160rem;
+        width: 180rem;
+        height: 180rem;
+      }
+
+      &-green {
+        top: auto;
+        bottom: -12rem;
+        right: -61rem;
+        height: 97.6rem;
+        width: 92.6rem;
+      }
+    }
+
+    &__slide {
+      display: block;
+    }
+
+    &__text {
+      width: 100%;
+      padding-top: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 11rem;
+    }
+
+    &__title {
+      margin-bottom: 22.2rem;
+    }
+
+    &__info {
+      padding: 5rem 4rem;
+      box-shadow: 0rem 2rem 5rem rgba(28, 106, 39, 0.03);
+      border-radius: 2.4rem;
+
+      &_text {
+        margin-bottom: 4rem;
+        font-family: 'Jost';
+        font-weight: 300;
+        font-size: 3.2rem;
+        line-height: 140%;
+      }
+
+      &_bottom {
+        display: block;
+      }
+
+      &_price {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 3rem;
+        text-align: right;
+        &_name {
+          margin-bottom: 0.2rem;
+          font-size: 2.8rem;
+        }
+
+        &_sum {
+          font-size: 5rem;
+        }
+      }
+
+      &_btn {
+        height: 10rem;
+        margin-top: 0rem;
+        padding: 0 11.4rem;
+      }
+    }
+
+    &__photo {
+      margin-left: 2rem;
+      width: 58.2rem;
+      height: 64rem;
+    }
+
+    &__navigation {
+      left: 0%;
+      top: 15%;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}

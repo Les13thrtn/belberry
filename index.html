@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>BelberryTest</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top">
+            <a href="#" class="header__logo">
+              <img src="img/logo.svg" alt="логотип" />
+            </a>
+            <div class="header__top_info">
+              <div class="header__adress">
+                <div class="header__adress_item">
+                  <div class="header__adress_text">
+                    г. Санкт-Петербург, проспект Пятилеток, д.5, к.2
+                  </div>
+                  <div class="header__adress_metro">
+                    <div class="header__adress_metro_icon">
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.97879 0.96582L6.28845 7.55743L9.18332 0.978089L9.68641 1.41828L9.35717 1.79457C9.68641 1.41828 9.68641 1.41828 9.68641 1.41828L9.68744 1.41918L9.68884 1.42041L9.69272 1.42385L9.70469 1.43463C9.71451 1.44355 9.72795 1.45592 9.74466 1.47171C9.77808 1.50327 9.82466 1.54853 9.88163 1.60711C9.99551 1.72421 10.1514 1.89506 10.3272 2.11684C10.678 2.55957 11.1121 3.21047 11.4465 4.04637C12.1221 5.73551 12.4347 8.1424 10.8573 11.034L9.18332 11.034C10.6062 8.42559 11.0923 5.85364 10.518 4.41777C10.175 3.56032 9.05512 3.6855 8.68205 4.5303L6.3573 9.79456C5.08812 7.04468 4.25091 5.35324 3.70733 4.31684C3.26565 3.47473 2.24824 3.47878 1.95843 4.38446C1.49789 5.82368 1.92624 8.41027 3.3573 11.034L1.71801 11.034C0.149211 8.15773 0.466577 5.76546 1.006 4.07969C1.27339 3.24407 1.64111 2.59176 1.94357 2.14645C2.09499 1.92353 2.23072 1.75149 2.33054 1.63321C2.38049 1.57404 2.42153 1.52821 2.45119 1.49609C2.46602 1.48002 2.478 1.46737 2.48684 1.45818L2.4977 1.447L2.50129 1.44336L2.50261 1.44203C2.50261 1.44203 2.50361 1.44103 2.85717 1.79457L2.50361 1.44103L2.97879 0.96582Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="header__adress_metro_text">Пр. Большевиков</div>
+                  </div>
+                  <div class="header__adress_schedule">с 10:00 до 21:00</div>
+                </div>
+                <div class="header__adress_item">
+                  <div class="header__adress_text">
+                    г. Санкт-Петербург, проспект Пятилеток, д.5, к.2
+                  </div>
+                  <div class="header__adress_metro">
+                    <div class="header__adress_metro_icon">
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.97879 0.96582L6.28845 7.55743L9.18332 0.978089L9.68641 1.41828L9.35717 1.79457C9.68641 1.41828 9.68641 1.41828 9.68641 1.41828L9.68744 1.41918L9.68884 1.42041L9.69272 1.42385L9.70469 1.43463C9.71451 1.44355 9.72795 1.45592 9.74466 1.47171C9.77808 1.50327 9.82466 1.54853 9.88163 1.60711C9.99551 1.72421 10.1514 1.89506 10.3272 2.11684C10.678 2.55957 11.1121 3.21047 11.4465 4.04637C12.1221 5.73551 12.4347 8.1424 10.8573 11.034L9.18332 11.034C10.6062 8.42559 11.0923 5.85364 10.518 4.41777C10.175 3.56032 9.05512 3.6855 8.68205 4.5303L6.3573 9.79456C5.08812 7.04468 4.25091 5.35324 3.70733 4.31684C3.26565 3.47473 2.24824 3.47878 1.95843 4.38446C1.49789 5.82368 1.92624 8.41027 3.3573 11.034L1.71801 11.034C0.149211 8.15773 0.466577 5.76546 1.006 4.07969C1.27339 3.24407 1.64111 2.59176 1.94357 2.14645C2.09499 1.92353 2.23072 1.75149 2.33054 1.63321C2.38049 1.57404 2.42153 1.52821 2.45119 1.49609C2.46602 1.48002 2.478 1.46737 2.48684 1.45818L2.4977 1.447L2.50129 1.44336L2.50261 1.44203C2.50261 1.44203 2.50361 1.44103 2.85717 1.79457L2.50361 1.44103L2.97879 0.96582Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="header__adress_metro_text">Пр. Большевиков</div>
+                  </div>
+                  <div class="header__adress_schedule">с 10:00 до 21:00</div>
+                </div>
+              </div>
+              <div class="header__contanct">
+                <a href="" class="header__contanct_application btn"
+                  >Записаться</a
+                >
+                <a class="header__contanct_tel" href="tel:+79124248107"
+                  >8 (912) 424 81 07</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <nav class="header__nav nav">
+              <ul class="header__nav_list">
+                <li class="sublist">
+                  <a href="#">
+                    <div class="sublist__burger"><span></span></div>
+                    Услуги</a
+                  >
+                  <div class="header-dropdown">
+                    <div class="container">
+                      <div class="header-dropdown__body">
+                        <div class="header-dropdown__content">
+                          <div class="header-dropdown__left">
+                            <ul class="header-dropdown__list">
+                              <li class="active" data-sublist="1">
+                                <a href="#">Лазерная косметология</a>
+                              </li>
+                              <li data-sublist="2">
+                                <a href="#">Инъекционная косметология</a>
+                              </li>
+                              <li data-sublist="3">
+                                <a href="#">Эстетическая косметология</a>
+                              </li>
+                              <li data-sublist="4">
+                                <a href="#">Нитевой лифтинг</a>
+                              </li>
+                              <li data-sublist="5">
+                                <a href="#">Интимное омоложение</a>
+                              </li>
+                              <li data-sublist="6">
+                                <a href="#">Массаж</a>
+                              </li>
+                              <li data-sublist="7">
+                                <a href="#">Мужчинам</a>
+                              </li>
+                            </ul>
+
+                            <div class="header-dropdown__sublist-wrap desktop">
+                              <ul
+                                class="header-dropdown__sublist active"
+                                data-sublist="1"
+                              >
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Эпиляция
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Ноги</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подмышки</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лицо</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подбородок</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Зона бикини</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Живот</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерная шлифовка СО2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Фотоомоложение
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лечение акне
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное удаление сосудов
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на лице</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лазерное удаление сосудистых
+                                          звездочек</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление носовых сосудов</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудистых звездочек на
+                                          ногах</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на ногах</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение розацея
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение грибка ногтей
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение купероза
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лечение купероза на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Удаление пигментных пятен лазером
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Пигментация на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </ul>
+
+                              <ul
+                                class="header-dropdown__sublist"
+                                data-sublist="2"
+                              >
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Эпиляция2
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Ноги</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подмышки</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лицо</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подбородок</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Зона бикини</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Живот</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерная шлифовка СО2 2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Фотоомоложение 2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лечение акне 2
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное удаление сосудов
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на лице</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лазерное удаление сосудистых
+                                          звездочек</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление носовых сосудов</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудистых звездочек на
+                                          ногах</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на ногах</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение розацея
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение грибка ногтей
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение купероза
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лечение купероза на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Удаление пигментных пятен лазером
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Пигментация на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="sublist">
+                  <a href="#">О нас</a>
+                  <div class="header-dropdown">
+                    <div class="container">
+                      <div class="header-dropdown__body">
+                        <div class="header-dropdown__content">
+                          <div class="header-dropdown__left">
+                            <ul class="header-dropdown__list">
+                              <li class="active" data-sublist="1">
+                                <a href="#">test</a>
+                              </li>
+                              <li data-sublist="2">
+                                <a href="#">test2</a>
+                              </li>
+                              <li data-sublist="3">
+                                <a href="#">test3</a>
+                              </li>
+                              <li data-sublist="4">
+                                <a href="#">test4</a>
+                              </li>
+                              <li data-sublist="5">
+                                <a href="#">test5</a>
+                              </li>
+                              <li data-sublist="6">
+                                <a href="#">test6</a>
+                              </li>
+                              <li data-sublist="7">
+                                <a href="#">test7</a>
+                              </li>
+                            </ul>
+
+                            <div class="header-dropdown__sublist-wrap desktop">
+                              <ul
+                                class="header-dropdown__sublist active"
+                                data-sublist="1"
+                              >
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Эпиляция
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Ноги</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подмышки</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лицо</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подбородок</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Зона бикини</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Живот</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерная шлифовка СО2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Фотоомоложение
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лечение акне
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное удаление сосудов
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на лице</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лазерное удаление сосудистых
+                                          звездочек</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление носовых сосудов</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудистых звездочек на
+                                          ногах</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на ногах</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение розацея
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение грибка ногтей
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение купероза
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лечение купероза на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Удаление пигментных пятен лазером
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Пигментация на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </ul>
+
+                              <ul
+                                class="header-dropdown__sublist"
+                                data-sublist="2"
+                              >
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Эпиляция2
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Ноги</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подмышки</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лицо</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Подбородок</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Зона бикини</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Живот</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерная шлифовка СО2 2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Фотоомоложение 2
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лечение акне 2
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное удаление сосудов
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на лице</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лазерное удаление сосудистых
+                                          звездочек</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление носовых сосудов</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудистых звездочек на
+                                          ногах</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Удаление сосудов на ногах</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение розацея
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение грибка ногтей
+                                    </div>
+                                  </div>
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Лазерное лечение купероза
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Лечение купероза на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="header-dropdown__sublist_column">
+                                  <div class="header-dropdown__sublist_item">
+                                    <div
+                                      class="header-dropdown__sublist_item_head"
+                                    >
+                                      Удаление пигментных пятен лазером
+                                    </div>
+                                    <ul
+                                      class="header-dropdown__sublist_item_list"
+                                    >
+                                      <li>
+                                        <a
+                                          href=""
+                                          class="header-dropdown__sublist_item_list_link"
+                                          >Пигментация на лице</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Препараты</a></li>
+                <li><a href="#">Оборудование</a></li>
+                <li><a href="#">До/после</a></li>
+                <li><a href="#">Проблемы и решения</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Подарочный сертификат</a></li>
+                <li><a href="#">Интернет-магазин</a></li>
+              </ul>
+            </nav>
+
+            <ul class="header__icons">
+              <li class="header__icons_item">
+                <a href="" class="header__icons_link" href="tel:+79124248107"
+                  ><svg
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.6952 10.8637L12.6953 10.8637L12.6991 10.8522C12.9308 10.1424 14.0017 9.83994 14.6678 10.4677L17.1851 12.8401L17.528 12.4763L17.1851 12.8401C17.589 13.2208 17.6252 13.9133 17.172 14.4124L15.4769 16.0099L15.8199 16.3738L15.4769 16.0099C15.1477 16.3202 14.6514 16.4988 13.969 16.5C13.285 16.5012 12.4523 16.3224 11.5164 15.9604C9.64616 15.237 7.45215 13.8162 5.37463 11.8582C3.29802 9.9011 1.81654 7.83725 1.0635 6.08325C0.686588 5.20533 0.502489 4.42906 0.500025 3.79627C0.497591 3.1712 0.670449 2.71798 0.974478 2.4138L2.67759 0.808691C3.09948 0.411077 3.88454 0.37916 4.43201 0.820895L6.9363 3.18109C7.55201 3.76137 7.31003 4.73178 6.51066 4.96359L6.51063 4.96347L6.50008 4.96679C5.49879 5.2813 4.72333 6.3647 5.09186 7.45185C5.35616 8.46909 6.14917 9.53555 7.06224 10.3852C7.98465 11.2435 9.11622 11.9612 10.1313 12.2004L10.1313 12.2005L10.1435 12.2031C11.155 12.415 12.3282 11.9013 12.6952 10.8637Z"
+                      stroke="#6FC67B"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="header__icons_item">
+                <a href="" class="header__icons_link" href="#"
+                  ><svg
+                    viewBox="0 0 19 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.61643 16.4978C13.9956 16.496 17.5572 12.9335 17.559 8.55527C17.5598 6.43306 16.7344 4.43755 15.2349 2.93631C13.7353 1.435 11.7411 0.607851 9.61636 0.606934C5.23849 0.606934 1.67545 4.16978 1.67371 8.549C1.67311 9.94886 2.03885 11.3152 2.73391 12.5197L1.60712 16.6355L5.81759 15.531C6.97769 16.1638 8.28385 16.4973 9.61315 16.4978H9.61643Z"
+                      stroke="#6FC67B"
+                    />
+                    <path
+                      d="M13.6178 10.4443C13.5682 10.3615 13.4359 10.3118 13.2375 10.2124C13.039 10.1131 12.0633 9.63305 11.8814 9.56676C11.6995 9.50055 11.5671 9.46747 11.4349 9.66608C11.3026 9.86473 10.9222 10.3118 10.8065 10.4443C10.6907 10.5767 10.5749 10.5933 10.3765 10.4939C10.1781 10.3946 9.53861 10.185 8.78057 9.50889C8.19059 8.98264 7.79229 8.33278 7.67653 8.13409C7.56076 7.9354 7.66419 7.82803 7.76354 7.72907C7.85282 7.64012 7.96201 7.49722 8.06123 7.38137C8.16045 7.26552 8.19353 7.18268 8.25968 7.05033C8.32583 6.91782 8.29276 6.80197 8.24314 6.70262C8.19353 6.60328 7.79663 5.62643 7.63126 5.22905C7.47015 4.84207 7.30655 4.89449 7.18474 4.88838C7.06911 4.88257 6.93666 4.88135 6.80437 4.88135C6.67208 4.88135 6.45706 4.93102 6.27515 5.12971C6.09325 5.32839 5.58057 5.80853 5.58057 6.78531C5.58057 7.76216 6.29168 8.70585 6.39092 8.83828C6.49014 8.97079 7.79032 10.9753 9.78116 11.8349C10.2547 12.0394 10.6243 12.1615 10.9125 12.253C11.3879 12.4041 11.8206 12.3827 12.1625 12.3316C12.5438 12.2747 13.3367 11.8516 13.5021 11.388C13.6674 10.9243 13.6674 10.527 13.6178 10.4443Z"
+                      fill="#6FC67B"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="header__icons_item">
+                <a href="" class="header__icons_link" href="#">
+                  <svg
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.90723 1.08922C8.05815 1.08817 9.18353 1.42849 10.141 2.06714C11.0985 2.7058 11.845 3.61408 12.2862 4.67709C12.7273 5.7401 12.8433 6.91007 12.6194 8.03901C12.3955 9.16794 11.8418 10.2051 11.0284 11.0193C10.2149 11.8335 9.17827 12.3881 8.04954 12.6131C6.92081 12.838 5.75073 12.7231 4.68732 12.2829C3.62391 11.8427 2.71494 11.097 2.07542 10.1401C1.43589 9.18321 1.09453 8.05815 1.09453 6.90723C1.10151 5.36726 1.71599 3.89228 2.80442 2.80286C3.89286 1.71343 5.36727 1.0976 6.90723 1.08922ZM6.90723 0C5.54111 0 4.20567 0.405102 3.06978 1.16408C1.93389 1.92305 1.04858 3.00182 0.525785 4.26395C0.00299289 5.52608 -0.133793 6.91489 0.132724 8.25476C0.39924 9.59463 1.05709 10.8254 2.02308 11.7914C2.98908 12.7574 4.21983 13.4152 5.5597 13.6817C6.89957 13.9483 8.28838 13.8115 9.55051 13.2887C10.8126 12.7659 11.8914 11.8806 12.6504 10.7447C13.4094 9.60879 13.8145 8.27335 13.8145 6.90723C13.8145 5.07532 13.0867 3.31844 11.7914 2.02308C10.496 0.727724 8.73914 0 6.90723 0Z"
+                      fill="#6FC67B"
+                    />
+                    <path
+                      d="M16.827 16.094L12.2544 11.251L11.4999 12.0002L16.0725 16.8432C16.1217 16.8927 16.1802 16.9321 16.2446 16.959C16.309 16.986 16.3781 17 16.4479 17.0002C16.5177 17.0005 16.5869 16.987 16.6515 16.9605C16.7161 16.934 16.7748 16.895 16.8244 16.8459C16.8739 16.7967 16.9133 16.7382 16.9402 16.6738C16.9672 16.6094 16.9812 16.5403 16.9814 16.4705C16.9817 16.4007 16.9681 16.3315 16.9417 16.2669C16.9152 16.2023 16.8762 16.1436 16.827 16.094Z"
+                      fill="#6FC67B"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__decor hero__decor-white">
+          <img src="img/decor.svg" alt="" />
+        </div>
+        <div class="hero__decor hero__decor-green">
+          <img src="img/hero-back.webp" alt="" />
+        </div>
+        <div class="container">
+          <div class="hero__content swiper">
+            <div class="swiper-wrapper">
+              <div class="hero__slide swiper-slide">
+                <div class="hero__text">
+                  <h1 class="hero__title title">
+                    Косметологическая клиника <span>New&nbsp;Clinic</span>
+                  </h1>
+                  <div class="hero__info">
+                    <div class="hero__info_text">
+                      Скидки на контурную пластику губ
+                    </div>
+                    <div class="hero__info_bottom">
+                      <div class="hero__info_price">
+                        <div class="hero__info_price_name">
+                          Контурная пластика губ за
+                        </div>
+                        <div class="hero__info_price_sum">10 500 ₽</div>
+                      </div>
+                      <a href="#" class="hero__info_btn btn">Оставить заявку</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__photo">
+                  <img src="img/hero-photo.png" alt="фотография клиента" />
+                </div>
+              </div>
+              <div class="hero__slide swiper-slide">
+                <div class="hero__text">
+                  <h1 class="hero__title title">
+                    Косметологическая клиника <span>New&nbsp;Clinic</span>
+                  </h1>
+                  <div class="hero__info">
+                    <div class="hero__info_text">
+                      Скидки на контурную пластику губ test
+                    </div>
+                    <div class="hero__info_bottom">
+                      <div class="hero__info_price">
+                        <div class="hero__info_price_name">
+                          Контурная пластика губ за
+                        </div>
+                        <div class="hero__info_price_sum">10 500 ₽</div>
+                      </div>
+                      <a href="#" class="hero__info_btn btn">Оставить заявку</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__photo">
+                  <img src="img/hero-photo.png" alt="фотография клиента" />
+                </div>
+              </div>
+              <div class="hero__slide swiper-slide">
+                <div class="hero__text">
+                  <h1 class="hero__title title">
+                    Косметологическая клиника <span>New&nbsp;Clinic</span>
+                  </h1>
+                  <div class="hero__info">
+                    <div class="hero__info_text">
+                      Скидки на контурную пластику губ test 2
+                    </div>
+                    <div class="hero__info_bottom">
+                      <div class="hero__info_price">
+                        <div class="hero__info_price_name">
+                          Контурная пластика губ за
+                        </div>
+                        <div class="hero__info_price_sum">10 500 ₽</div>
+                      </div>
+                      <a href="#" class="hero__info_btn btn">Оставить заявку</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__photo">
+                  <img src="img/hero-photo.png" alt="фотография клиента" />
+                </div>
+              </div>
+            </div>
+            <div class="navigation hero__navigation">
+              <div
+                class="navigation__btn navigation__btn_prev hero__navigation__btn_prev"
+              >
+                <svg
+                  viewBox="0 0 15 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M14 27L1 14L14 1" />
+                </svg>
+              </div>
+              <div
+                class="navigation__btn navigation__btn_next hero__navigation__btn_next"
+              >
+                <svg
+                  viewBox="0 0 15 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M14 27L1 14L14 1" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
